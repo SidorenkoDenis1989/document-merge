@@ -1,0 +1,22 @@
+@import ~@resources/sass/_colors
+
+.alert
+  margin: 10px
+  padding: 10px
+  display: inline-flex
+  align-items: center
+  color: $white !important
+  &_type_success
+    background-color: $green500 !important
+  &_type_info
+    background-color: $grey-bg !important
+  &_type_warning
+    background-color: $orange500 !important
+  &_type_error
+    background-color: $nangaRedColor !important
+
+  &_full-width
+    width: calc(100% - 20px)
+
+  &__icon
+    margin-right: 10px

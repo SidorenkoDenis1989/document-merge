@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es6",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "alwaysStrict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "typeRoots": [
+      "typings/",
+      "node_modules/@types/"
+    ],
+    "sourceMap": true,
+    "declaration": false,
+    "baseUrl": ".",
+    "paths": {
+      "@resources/*": ["./resources/*"],
+      "@constant": ["./src/constant"],
+      "@service/*": ["./src/service/*"],
+      "@service": ["./src/service"],
+      "@config/*": ["./src/config/*"],
+      "@config": ["./src/config"],
+      "@component/*": ["./src/component/*"],
+      "@component": ["./src/component"],
+      "@data/*": ["./src/data/*"],
+      "@data": ["./src/data"],
+      "@test/*": ["./test/*"],
+      "@test": ["./test"],
+      "@scope": ["./src/scope"],
+      "@store": ["./src/store"],
+      "@reducer/*": ["./src/reducers/*"],
+      "@reducer": ["./src/reducers"],
+      "@utils": ["./src/utils"],
+      "@theme": ["./src/theme"]
+    }
+  },
+  "include": [
+    "src",
+    "test"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

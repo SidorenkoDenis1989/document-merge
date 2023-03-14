@@ -1,0 +1,34 @@
+$size-xs: 480px
+$size-sm: 576px
+$size-md: 768px
+$size-lg: 992px
+$size-xl: 1200px
+$size-xxl: 1600px
+$size-main: $size-xxl
+
+$orientationLandscape: landscape
+$orientationPortrait: portrait
+
+@mixin error()
+  border: solid 5px red !important
+
+@mixin media-size($size1 : null, $size2 : null)
+  @if $size1 == null
+    @media (max-width: $size2)
+      @content
+  @else if $size2 == null
+    @media (min-width: $size1 + 1px)
+      @content
+  @else
+    @media (min-width: $size1 + 1px) and (max-width: $size2)
+      @content
+
+@mixin media-orientation($orientation)
+  @if $orientation == $orientationLandscape
+    @media (orientation: landscape)
+      @content
+  @else if $orientation == $orientationPortrait
+    @media (orientation: portrait)
+      @content
+
+

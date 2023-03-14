@@ -1,0 +1,28 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node
+/node_modules
+
+# testing
+/coverage
+
+# production
+/dist
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+setting
+
+*.log*
+
+# report
+bundle-report.html
+
+*.iml
+
+# ignore webfonts in root folder
+/*.woff
